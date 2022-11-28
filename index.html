@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+      
+<div class="container">
+<h1>Счет!</h1>
+<form>
+    <p>Стоимость с 1 человека</p>
+    <input type="text" placeholder="Стоимость" id="price">
+    <p>Количество человек</p>
+    <input type="text" placeholder="Количество человек" id="price2"><br>
+    <button id="addTip">Добавьте чаевые</button>
+    <select id="tip">
+        <option disabled>Select an option</option>     <!--disabled сделает строку кот.нальзя выбрать-->
+        <option value="0.30">30%!</option>
+        <option value="0.20">20%!</option>
+        <option value="0.10">10%!</option>
+        <option value="0.00">Нет чаевых!</option>
+    </select>
+    <p><button id="price3">Посчитать</button></p>
+</form>
+
+<div id="showtotalamount">
+    <!--1 блок-->
+    <div id="billSplit">
+        <p class="text">С человека:</p>
+        <span>$</span>    <!--здесь будет цифра, кот.придет с javascript-->
+        <span id="divadedBill"></span>     <!--здесь мы отразим сумму,кот. высчитаем в javascript-->
+        <span>per person</span>   
+    </div>
+
+   <!--2 блок-->
+   <div id="totalTip">
+    <p class="text">Чаевые:</p>
+    <span>$</span>    <!--здесь будет цифра, кот.придет с javascript-->
+    <span id="divadedTip"></span>     <!--здесь мы отразим сумму,кот. высчитаем в javascript-->
+    <span>per person</span>   
+</div>
+
+   <!--3 блок-->
+   <div id="Totalamount">
+    <p class="text">Сумма:</p>
+    <span>$</span>    <!--здесь будет цифра, кот.придет с javascript-->
+    <span id="BillAndTip"></span>     <!--здесь мы отразим сумму,кот. высчитаем в javascript-->
+    <span>per person</span>   
+</div>
+
+
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js"></script> 
+</body>
+</html>

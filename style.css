@@ -1,0 +1,108 @@
+body{
+background-image: url(food3.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 100vh;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(214, 243, 187);
+    width: 500px;
+    height: 700px;
+    margin-left: 500px;
+    border-radius: 40px;
+    opacity: 0.9;
+}
+
+form{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+h1{
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(214, 101, 36);
+}
+
+#addTip{
+    background-color: rgb(232, 243, 207);;
+    font-size: 20px;
+    color: rgb(49, 80, 48);
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    font-size: 20px;
+    color: rgb(49, 80, 48);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text{
+    color: rgb(214, 101, 36);
+   margin-left: 30px;
+   font-size: 17px;
+   font-family: 'Montserrat', sans-serif;
+}
+
+input{
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+}
+
+button{
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+}
+
+select{
+    padding: 4px;
+    border-radius: 15px;
+    border: none;
+}
+
+#showtotalamount{
+    display: flex;
+    flex-direction: row;
+}
+
+#billSplit, #totalTip, #Totalamount{
+    width: 140px;
+    height: 140px;
+    border: none;
+    background-color: rgb(178, 204, 152);
+    border-radius: 30px;
+    margin: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(61, 61, 61);
+    font-size: 15px;
+}
+
+@media all and (max-width: 800px){
+    .container{
+        width: 300px;
+        height: 500px;
+        margin-left: 100px;
+    }
+     }
+   
+     
+      
+      @media all and (max-width: 500px){
+        .container{
+            width: 300px;
+            height: 500px;
+            margin-left: 100px;
+        }
+        }
+          
+      
+
+
